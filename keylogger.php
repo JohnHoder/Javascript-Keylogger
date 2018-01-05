@@ -2,6 +2,7 @@
 
 <?php
 
+header($_SERVER["SERVER_PROTOCOL"]." 404 Not Found", true, 404);
 header('Access-Control-Allow-Methods: GET, REQUEST, OPTIONS');
 header('Access-Control-Allow-Credentials: true');
 header('Access-Control-Allow-Origin: *');
@@ -18,3 +19,4 @@ if(isset($_REQUEST['c']) && !empty($_REQUEST['c']))
 ?>
 
 </html>
+
